@@ -30,9 +30,6 @@
     color: #727272;
   }
   
-  .bg-light {
-    background-color: rgba(255, 144, 14, 0.1);
-  }
   
   /* Header + Navbar styles */
   .navbar {
@@ -40,9 +37,10 @@
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
+    padding-right: 150px; /* Space after nav items */
     max-width: 1440px;
     margin: 0 auto;
-    gap: 673px;
+    gap: 590px;
   }
   
   .brand {
@@ -52,44 +50,71 @@
   
   .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     list-style: none;
     margin: 0;
     padding: 0;
   }
+  .nav-link {
+    text-decoration: none !important;
+    color: #333;
+    font-weight: 500;
+  }
   
   .nav-item {
+    padding: 10px;
     list-style: none;
+    text-decoration: none;
+  }
+
+  .logo{
+    margin-right: 590px;
+    margin-left: 150px;
+    height: 50px; /* or set to whatever fits your design */
+    object-fit: contain;
+    display: block;
   }
   
-  .nav-link {
-    text-decoration: none;
-    color: #424242;
-  }
   
   /* Banner */
   .banner {
-    max-width: 1440px;
+    max-width: auto;
     margin: 0 auto;
   }
   
   .banner-content {
-    max-width: 850px;
-    margin: 0 auto 50px auto;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px; /* spacing between text and image */
+    padding: 40px 150px; /* top/bottom, left/right */
   }
   
   .banner-title {
-    font-weight: 700;
-    font-size: 4rem;
+    font-weight: 329;
+    font-size: 65px;
+    line-height: 1.2; /* or try 75px for fixed height */
+
+  }
+
+  .highlight {
+    color: rgb(233, 90, 8);
   }
   
+ 
   .banner-image {
     width: 100%;
   }
+
+  .banner-image img {
+    width: 570px;
+    height: 355px;
+    object-fit: cover; /* or contain, depending on how you want it to scale */
+    display: block;
+  }
   .banner-description {
-    color: #727272;
-    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
     margin-top: 20px;
   }
   
@@ -116,81 +141,4 @@
       font-size: 1rem;
       padding: 15px 20px;
     }
-  }
-
-
-  /* second banner */
-
-  .first-twoimage{
-    margin-top: 85px;
-    margin-left: 100px;
-    display: grid;
-    gap: 24px;
-
-  }
-
-  .second-twoimage{
-    margin-top: 85px;
-    margin-left: 24px;
-    display: grid;
-    gap: 24px;
-
-  }
-
-  .banner2 {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-  
-  .banner2-content {
-    max-width: 850px;
-    margin: 0 auto 50px auto;
-    text-align: ;
-  }
-  
-  .banner2-title {
-    margin-top: 279px;
-    margin-left: 98px;
-    font-weight: normal;
-    font-size: 45px;
-  }
-
-  .gray-text {
-    color: #727272; /* Light gray */
-  }
-  .bold-text {
-    font-weight: bold;
-  }
-  
-  .highlight-text {
-    color: #ff900e; /* Orange */
-  }
-  
-  
-  .banner2-image {
-    width: 100%;
-  }
-  .banner2-description {
-    color: #727272;
-    font-size: 1rem;
-    margin-top: 20px;
-    margin-left: 73px;
-  }
-
-
-  .btn-sec {
-    background-color: #ff900e;
-    align-self: baseline;
-    color: white;
-    font-size: 1.25rem;
-    font-weight: 600;
-    border-radius: 8px;
-    border: 0;
-    padding: 12px 20px;
-  }
-
-  .button-left {
-    text-align: left;
-    margin-top: 20px; /* optional spacing */
-    margin-left: 73px;
   }
