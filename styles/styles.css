@@ -277,6 +277,118 @@
 }
 
 
+/* Latest Deal */
+
+/* Container for Latest Deal section */
+.latest-deal {
+  max-width: 1200px;
+  margin: 210px auto 0;  /* center horizontally, top spacing */
+  padding: 0 150px;
+  text-align: center;
+}
+
+/* Title and description */
+.deal-title {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.deal-description {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Flex container for the two columns */
+.deal-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Left column: two smaller images stacked */
+.deal-left {
+  flex-basis: 380px;  /* fits the width of smaller images */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Right column: one large image */
+.deal-right {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Each deal box wraps the image and overlay */
+.deal-box {
+  position: relative;
+  width: max-content;  /* shrink-wrap to image width */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Images sized exactly as requested */
+.deal-60 img {
+  width: 366.22px;
+  height: 206px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.deal-30 img {
+  width: 402px;
+  height: 268px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.deal-25 img {
+  width: 753px;
+  height: 423.13px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Overlay text centered on images */
+.deal-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;           /* white text */
+  text-align: center;
+  background: transparent; /* no background */
+  padding: 0;
+  border-radius: 0;
+}
+
+.deal-overlay h3,
+.deal-overlay h4 {
+  margin: 0;
+  padding: 0;
+  color: white;  /* ensure text is white */
+}
+
+/* "Shop Now" underline styling */
+.shop-now {
+  display: inline-block;
+  border-bottom: 2px solid white;
+  padding-bottom: 4px;  /* pushes underline slightly below text */
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin-top: 5px; /* spacing from above text */
+}
+
+
+
 
 /* Responsive */
 @media screen and (max-width: 576px) {
