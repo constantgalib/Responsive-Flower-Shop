@@ -1,144 +1,234 @@
 /* Font */
 .work-sans-font {
-    font-family: "Work Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  /* Shared styles */
-  .display-flex {
-    display: flex;
-  }
-  
-  .btn-primary {
-    background-color: #ff900e;
-    color: white;
-    padding: 20px 25px;
-    font-size: 1.25rem;
-    font-weight: 600;
-    border-radius: 8px;
-    border: 0;
-  }
-  
-  /* Colors */
-  .text-gray {
-    color: #424242;
-  }
-  
-  .text-light-gray {
-    color: #727272;
-  }
-  
-  
-  /* Header + Navbar styles */
-  .navbar {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20px;
-    padding-right: 150px; /* Space after nav items */
-    max-width: 1440px;
-    margin: 0 auto;
-    gap: 590px;
-  }
-  
-  .brand {
-    font-weight: 700;
-    font-size: 3rem;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 10px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .nav-link {
-    text-decoration: none !important;
-    color: #333;
-    font-weight: 500;
-  }
-  
-  .nav-item {
-    padding: 10px;
-    list-style: none;
-    text-decoration: none;
-  }
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .logo{
-    margin-right: 590px;
-    margin-left: 150px;
-    height: 50px; /* or set to whatever fits your design */
-    object-fit: contain;
-    display: block;
-  }
-  
-  
-  /* Banner */
-  .banner {
-    max-width: auto;
-    margin: 0 auto;
-  }
-  
+/* Shared Utility Classes */
+.display-flex {
+  display: flex;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #ff900e;
+  color: white;
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 0;
+}
+
+/* Colors */
+.text-gray {
+  color: #424242;
+}
+
+.text-light-gray {
+  color: #727272;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  padding-right: 150px;
+  max-width: 1440px;
+  margin: 0 auto;
+  gap: 590px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+/* Logo */
+.logo {
+  margin-right: 590px;
+  margin-left: 150px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 150px;
+}
+
+.banner-text {
+  margin: 0;
+  padding: 0;
+}
+
+.banner-title {
+  font-weight: 329; /* consider using standard weight like 300 or 400 */
+  font-size: 65px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: rgb(233, 90, 8);
+}
+
+.banner-description {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  margin-top: 13px;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+.banner-image img {
+  width: 570px;
+  height: 355px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+}
+
+
+/* Flower-card section */
+
+
+/* Flower Section */
+.flower-section {
+  padding: 60px 150px;
+  background-color: #fefefe;
+  text-align: center;
+}
+
+.section-header {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 18px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.flower-list {
+  display: flex;
+  flex-wrap: wrap; /* allows multiple rows */
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.flower-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.flower-card:hover {
+  transform: translateY(-5px);
+}
+
+.flower-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.flower-name {
+  font-size: 20px;
+  margin: 12px 0 5px;
+}
+
+.flower-price {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.btn-primary {
+  background-color: #ff900e;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-links,
   .banner-content {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    gap: 40px; /* spacing between text and image */
-    padding: 40px 150px; /* top/bottom, left/right */
-  }
-  
-  .banner-title {
-    font-weight: 329;
-    font-size: 65px;
-    line-height: 1.2; /* or try 75px for fixed height */
-
+    text-align: center;
   }
 
-  .highlight {
-    color: rgb(233, 90, 8);
-  }
-  
- 
-  .banner-image {
-    width: 100%;
-  }
-
-  .banner-image img {
-    width: 570px;
-    height: 355px;
-    object-fit: cover; /* or contain, depending on how you want it to scale */
-    display: block;
-  }
-  .banner-description {
-    color: rgb(0, 0, 0);
-    font-size: 22px;
+  .nav-links {
+    gap: 10px;
     margin-top: 20px;
   }
-  
-  /* Responsive styles */
-  @media screen and (max-width: 576px) {
-    .navbar, 
-    .nav-links, 
-    .banner2 {
-      flex-direction: column;
-    }
-  
-    .nav-links {
-      flex-direction: column;
-      gap: 10px;
-      align-items: flex-start;
-      margin-top: 20px;
-    }
-  
-    .banner-title {
-      font-size: 2.5rem;
-    }
-  
-    .btn-primary {
-      font-size: 1rem;
-      padding: 15px 20px;
-    }
+
+  .banner-title {
+    font-size: 2.5rem;
   }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 15px 20px;
+  }
+
+  .logo {
+    margin: 0 auto 20px auto;
+  }
+}
+
