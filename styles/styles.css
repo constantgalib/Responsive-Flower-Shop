@@ -136,13 +136,13 @@
 }
 
 .section-title {
-  font-size: 42px;
+  font-size: 50px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 .section-description {
-  font-size: 18px;
+  font-size: 22px;
   color: #555;
   max-width: 600px;
   margin: 0 auto;
@@ -172,14 +172,15 @@
 }
 
 .flower-image {
-  width: 100%;
-  height: 180px;
+  width: 270;
+  height: 322.94px;
   object-fit: cover;
   border-radius: 8px;
 }
 
 .flower-name {
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: normal;
   margin: 12px 0 5px;
 }
 
@@ -200,6 +201,80 @@
   cursor: pointer;
 }
 
+
+/* plants lover */
+
+.trusted-section {
+  padding: 60px 150px;
+  background-color: #fff;
+}
+
+.trusted-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Left image column */
+.trusted-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.store-image {
+  width: 540;
+  height: 597;
+  border-radius: 10px;
+}
+
+/* Superscript badge */
+.trusted-badge {
+  position: absolute;
+  top: -120px;
+  right: -250px;
+  width: 286px;
+  height: 286px;
+}
+
+/* Right text column */
+
+.trusted-section {
+  margin-top: 210px;
+  padding: 0 150px 60px 150px; /* no top padding, keep sides and bottom */
+}
+
+.trusted-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* top-aligns both columns */
+  gap: 60px;
+}
+
+.trusted-text {
+  flex: 1;
+  margin-top: 30px; /* adjust this value so it's just below the badge */
+}
+
+.trusted-title {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-left: 120px;
+}
+
+.trusted-description {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+  font-size: 22px;
+  margin-left: 120px;
+}
+
+.trusted-description li {
+  margin-bottom: 12px;
+}
 
 
 
