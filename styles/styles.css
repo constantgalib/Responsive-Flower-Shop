@@ -528,7 +528,7 @@ body {
 /* Social Icons */
 .social-icons {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 15px;
 }
 
